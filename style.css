@@ -1,0 +1,210 @@
+body, html {
+    /*height: 100%;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;*/
+    
+      font-family: 'Montserrat';
+      -ms-overflow-style: none;
+      /* scroll-snap-type: y proximity; */
+      margin: 0;
+      padding: 0;
+      
+    }
+   
+    * {
+      scroll-behavior: smooth;
+      /*box-sizing:border-box;*/
+    }
+    .section {
+        height: 100vh;
+        width: 100%;
+        /*font-size: 22px;
+        color: white;*/
+      }
+     
+      .bgtxt {
+        background-color: rgb(0,0,0); /* Fallback color */
+        background-color: rgba(0,0,0,0.4); /* Black w/opacity/see-through */
+        color: white;
+        font-weight: bold;
+        border: 3px solid #f1f1f1;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        z-index: 2;
+        width: 60%;
+        padding: 20px;
+        text-align: center;
+        -webkit-animation: fadein 3s;
+      }
+      @-webkit-keyframes fadein {
+        from { opacity: 0; }
+        to   { opacity: 1; }
+    }
+      /*.bg1 {
+        
+        background-image: url("3.jpg");
+        
+       
+        height:100%; 
+        width:100%;
+        
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+      }*/
+      .parallax-container{
+        height:80vh;
+      }
+      
+      
+      .rw::after {
+        content: "";
+        clear: both;
+        display: table;
+        
+      }
+      [class*="cl-"] {
+        float:left;
+        width: 100%;
+        
+      }
+      .about-ig{
+        width:90%;
+        height:50%;
+        padding:5%;
+      }
+      
+      .about-head{
+        text-align: center;
+        padding-top: 10%;
+        
+	font-size: 500%;
+	margin-bottom: 30px;
+      }
+      .about-txt{
+        padding:10%;
+        font-size:150%;
+        font-style: italic;
+        text-decoration: grey;
+      }
+      .cd{
+        width:70%;
+        height:70%;
+        padding:15%;
+        z-index:3;
+        opacity: 1;
+      }
+      .ig{
+        width:50%;
+        height: 50%;
+        opacity: 1;
+      }
+      .x{
+        background-color: peru;
+        width:80%;
+        height:40%;
+        
+      }
+      .gl{
+        padding-top:10%;
+        padding-right: 3%;
+        padding-left: 17%;
+      }
+
+      .gl1{
+        padding-top:10%;
+        padding-left:17%;
+         padding-right:3%;
+      }
+      .button {
+        border-radius: 4px;
+        
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        font-size: 150%;
+        padding: 0%;
+        width: 60%;
+        height:12%;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+      }
+      
+      .button span {
+        cursor: pointer;
+        display: inline-block;
+        position: relative;
+        transition: 0.5s;
+      }
+      
+      .button span:after {
+        content: '\00bb';
+        position: absolute;
+        opacity: 0;
+        top: 0;
+        right: -10%;
+        transition: 0.5s;
+      }
+      
+      .button:hover span {
+        padding-right: 13%;
+      }
+      
+      .button:hover span:after {
+        opacity: 1;
+        right: 0;
+      }
+   
+      
+      @media only screen and (min-width: 768px) {
+       /*for desktop*/
+        .cl-1 {width: 8.33%;}
+        .cl-2 {width: 16.66%;}
+        .cl-3 {width: 25%;}
+        .cl-4 {width: 33.33%;}
+        .cl-5 {width: 41.66%;}
+        .cl-6 {width: 50%;}
+        .cl-7 {width: 58.33%;}
+        .cl-8 {width: 66.66%;}
+        .cl-9 {width: 75%;}
+        .cl-10 {width: 83.33%;}
+        .cl-11 {width: 91.66%;}
+        .cl-12 {width: 100%;}
+        .about-ig{
+          padding-top:20%;
+          padding-left:5%;
+        
+          width:70%;
+          height:70%;
+        }
+        #cat{
+          height:70vh;
+          width: 100%;
+        }
+        #cat1{
+          height:70vh;
+        }
+        .x{
+          background-color: peru;
+          width:75%;
+          height:60%;
+          
+        }
+        .gl{
+          padding-left:20%;
+        }
+        .gl1{
+          padding-left:8%;
+          padding-right: 15%;
+        }
+       
+  
+    }
+    
+     
+           
+    
